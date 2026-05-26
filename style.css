@@ -1,53 +1,59 @@
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #0f172a;
-  color: white;
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0a0f1c;
+  color:white;
 }
 
-header {
-  text-align: center;
-  padding: 30px;
+header{
+  text-align:center;
+  padding:20px;
 }
 
-input {
-  padding: 10px;
-  width: 80%;
-  margin-top: 10px;
-  border-radius: 8px;
-  border: none;
+.chat-box{
+  max-width:700px;
+  margin:auto;
+  padding:10px;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
+#chat{
+  background:#111a2e;
+  height:250px;
+  overflow:auto;
+  padding:10px;
+  border-radius:10px;
 }
 
-button {
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.input-area{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
 }
 
-#tools {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px;
+input{
+  flex:1;
+  padding:10px;
+  border:none;
+  border-radius:8px;
 }
 
-.card {
-  background: #1e293b;
-  padding: 15px;
-  border-radius: 12px;
+button{
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
 }
 
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #38bdf8;
-  text-decoration: none;
+#tools{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+  padding:20px;
+}
+
+.card{
+  background:#16233a;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
 }
