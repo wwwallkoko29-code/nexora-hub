@@ -1,54 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexora Hub</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora AI Platform</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <h1>Nexora Hub</h1>
-  <p>Your gateway to AI tools</p>
-
-  <input type="text" id="search" placeholder="Search AI tools...">
+  <h1>Nexora AI Platform</h1>
+  <p>Ask anything. Get the best AI tools instantly.</p>
 </header>
 
-<nav>
-  <button onclick="filter('all')">All</button>
-  <button onclick="filter('coding')">Coding</button>
-  <button onclick="filter('writing')">Writing</button>
-  <button onclick="filter('search')">Search</button>
-</nav>
+<div class="chat-box">
 
-<section id="tools">
+  <div id="chat"></div>
 
-  <div class="card coding">
-    <h3>ChatGPT</h3>
-    <p>Programming & general AI</p>
-    <a href="https://chatgpt.com" target="_blank">Open</a>
+  <div class="input-area">
+    <input id="input" type="text" placeholder="Type your request...">
+    <button onclick="send()">Send</button>
   </div>
 
-  <div class="card coding">
-    <h3>Claude</h3>
-    <p>Advanced coding & reasoning</p>
-    <a href="https://claude.ai" target="_blank">Open</a>
-  </div>
+</div>
 
-  <div class="card search">
-    <h3>Perplexity</h3>
-    <p>AI search engine</p>
-    <a href="https://perplexity.ai" target="_blank">Open</a>
-  </div>
-
-  <div class="card writing">
-    <h3>Gemini</h3>
-    <p>Writing & research</p>
-    <a href="https://gemini.google.com" target="_blank">Open</a>
-  </div>
-
-</section>
+<section id="tools"></section>
 
 <script src="script.js"></script>
 </body>
